@@ -35,12 +35,12 @@ const DriverFeatures = () => {
   return (
     <section className="relative py-20 overflow-hidden">
       <div 
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 before:absolute before:inset-0 before:bg-gradient-to-t before:from-dark before:to-transparent after:absolute after:inset-0 after:bg-gradient-to-b after:from-dark after:to-transparent"
         style={{
           backgroundImage: "url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          filter: "brightness(0.4)"
+          filter: "brightness(0.7) blur(4px)",
         }}
       />
       <div className="container mx-auto px-4 relative z-10">
