@@ -4,13 +4,6 @@ import RiskDiagram from "../components/RiskDiagram";
 import ProductCard from "../components/ProductCard";
 import DriverFeatures from "../components/DriverFeatures";
 
-const FeatureIcon = ({ text, subText }: { text: string; subText?: string }) => (
-  <div className="bg-yellow-400 rounded-full w-24 h-24 flex flex-col items-center justify-center text-dark p-2 text-center text-sm font-bold">
-    <div>{text}</div>
-    {subText && <div className="text-xs mt-1">{subText}</div>}
-  </div>
-);
-
 const Index = () => {
   useEffect(() => {
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
@@ -41,21 +34,6 @@ const Index = () => {
           <h2 className="section-title">About</h2>
           <h3 className="section-subtitle">見電ドライバーとは？</h3>
           <DriverFeatures />
-          <div className="flex justify-end gap-4 mt-8">
-            <FeatureIcon text="検知範囲" subText="AC100V-240V" />
-            <FeatureIcon 
-              text="電池交換OK" 
-              subText="アルカリ乾電池 単4型×2本" 
-            />
-            <FeatureIcon 
-              text="低圧絶縁手袋" 
-              subText="着用中でも使える" 
-            />
-            <FeatureIcon 
-              text="Made in Japan" 
-              subText="日本国内生産のこだわり" 
-            />
-          </div>
         </div>
       </section>
 
