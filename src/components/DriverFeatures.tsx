@@ -34,11 +34,20 @@ const features = [
 const DriverFeatures = () => {
   return (
     <div className="relative max-w-4xl mx-auto mt-16 h-[600px]">
+      <div 
+        className="absolute inset-0 z-0 opacity-20"
+        style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          filter: "brightness(0.7)"
+        }}
+      />
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
-        className="absolute inset-0 flex items-center justify-center"
+        className="absolute inset-0 flex items-center justify-center z-10"
       >
         <img
           src="https://images.unsplash.com/photo-1518770660439-4636190af475"
@@ -53,7 +62,7 @@ const DriverFeatures = () => {
           initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: index * 0.2 }}
-          className={`absolute ${feature.position} max-w-xs`}
+          className={`absolute ${feature.position} max-w-xs z-20`}
         >
           <div className="relative">
             <svg
