@@ -3,7 +3,7 @@ import HeroSection from "../components/HeroSection";
 import RiskDiagram from "../components/RiskDiagram";
 import ProductCard from "../components/ProductCard";
 import DriverFeatures from "../components/DriverFeatures";
-import { Shield, Zap, Battery, Factory } from "lucide-react";
+import { Shield, Zap, Battery, Factory, AlertCircle } from "lucide-react";
 
 const SpecItem = ({ icon: Icon, title, description }: { 
   icon: React.ElementType, 
@@ -49,6 +49,7 @@ const Index = () => {
           <h2 className="section-title">About</h2>
           <h3 className="section-subtitle">見電ドライバーとは？</h3>
           <DriverFeatures />
+          
           <div className="mt-20">
             <h3 className="text-2xl font-bold text-center mb-12 text-primary">製品仕様</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -72,6 +73,34 @@ const Index = () => {
                 title="Made in Japan"
                 description="品質と信頼性にこだわった国内生産"
               />
+            </div>
+          </div>
+
+          <div className="mt-24 bg-gray-900/50 rounded-xl p-8">
+            <h3 className="text-2xl font-bold mb-8 text-primary">電気工事作業者の課題を解決</h3>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="space-y-6 text-left">
+                <div className="bg-dark/50 p-6 rounded-lg border border-primary/20">
+                  <h4 className="text-lg font-semibold text-primary mb-2 flex items-center gap-2">
+                    <AlertCircle className="w-5 h-5" />
+                    作業時の不安を解消
+                  </h4>
+                  <ul className="space-y-3 text-gray-300">
+                    <li>・さっき検電したから大丈夫？という不安</li>
+                    <li>・目に見えない電気作業の恐怖</li>
+                    <li>・通電状態の確実な確認</li>
+                    <li>・スイッチの切り忘れ防止</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-t from-dark to-transparent z-10" />
+                <img
+                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+                  alt="電気工事作業"
+                  className="rounded-lg object-cover w-full h-[300px]"
+                />
+              </div>
             </div>
           </div>
         </div>
