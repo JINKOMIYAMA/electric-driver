@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import HeroSection from "../components/HeroSection";
 import RiskDiagram from "../components/RiskDiagram";
 import ProductCard from "../components/ProductCard";
+import DriverFeatures from "../components/DriverFeatures";
 
 const Index = () => {
   useEffect(() => {
@@ -29,29 +30,10 @@ const Index = () => {
       <HeroSection />
 
       <section className="py-20 container mx-auto px-4 relative">
-        <div 
-          className="absolute inset-0 z-0 opacity-10"
-          style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            filter: "brightness(0.7)"
-          }}
-        />
         <div className="fade-in-section relative z-10">
           <h2 className="section-title">About</h2>
           <h3 className="section-subtitle">セーフティシリーズとは？</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-lg mb-6">
-                カッターナイフは便利な道具である一方、使い方によってはケガを起こしてしまうリスクを抱えています。
-              </p>
-              <p className="text-lg">
-                そこでオルファは、カッターナイフで起こりうるケガのリスクを減らすべく、安全性を考慮し、かつ作業効率にも配慮した設計の「セーフティシリーズ」を生み出しました。
-              </p>
-            </div>
-            <RiskDiagram />
-          </div>
+          <DriverFeatures />
         </div>
       </section>
 
