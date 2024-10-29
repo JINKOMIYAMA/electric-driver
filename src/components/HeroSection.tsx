@@ -28,16 +28,16 @@ const HeroSection = ({ onLearnMoreClick }: { onLearnMoreClick: () => void }) => 
           <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto whitespace-nowrap">
             業界初、検電器と作業用ドライバーが1つになった革新的なツール
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col gap-4 justify-center items-center">
             <button 
               onClick={onLearnMoreClick}
-              className="bg-primary text-dark px-8 py-3 rounded-full text-lg font-bold hover:bg-opacity-90 transition-colors"
+              className="bg-primary text-dark px-8 py-3 rounded-full text-lg font-bold hover:bg-opacity-90 transition-colors w-48"
             >
               詳細を見る
             </button>
             <a 
               href="#products"
-              className="bg-accent text-dark px-8 py-3 rounded-full text-lg font-bold hover:bg-opacity-90 transition-colors"
+              className="bg-accent text-dark px-8 py-3 rounded-full text-lg font-bold hover:bg-opacity-90 transition-colors w-48"
             >
               ご購入はこちら
             </a>
