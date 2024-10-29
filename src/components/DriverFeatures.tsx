@@ -33,7 +33,7 @@ const features = [
 
 const DriverFeatures = () => {
   return (
-    <section className="relative py-20 overflow-hidden">
+    <section className="relative py-20 w-screen overflow-hidden -mx-[50vw] left-[50%] right-[50%]">
       <div 
         className="absolute inset-0 z-0 before:absolute before:inset-0 before:bg-gradient-to-t before:from-dark before:to-transparent after:absolute after:inset-0 after:bg-gradient-to-b after:from-dark after:to-transparent"
         style={{
