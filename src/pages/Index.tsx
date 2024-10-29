@@ -76,7 +76,7 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="mt-24 bg-gray-900/50 rounded-xl p-8">
+          <div className="mt-24">
             <h2 className="section-title">SAFETY</h2>
             <h3 className="section-subtitle">電気工事をする方々のお悩みを解決</h3>
             <div className="grid md:grid-cols-2 gap-8 items-center">
