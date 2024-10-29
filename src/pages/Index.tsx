@@ -113,6 +113,31 @@ const Index = () => {
                   />
                 </div>
               </div>
+
+              <div className="mt-12 bg-red-500/10 border border-red-500/20 rounded-lg p-6 backdrop-blur-sm">
+                <div className="flex items-start gap-3">
+                  <div className="bg-red-500 rounded-full p-2 mt-1">
+                    <AlertCircle className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-red-500 font-bold text-lg mb-3">ご注意</h4>
+                    <ul className="space-y-2 text-gray-300">
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-500 mt-1">•</span>
+                        ゴム手袋、ゴム長靴、ゴーグル等の安全保護具の着用をしてください。
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-500 mt-1">•</span>
+                        水滴、打撃などの強い衝撃を与えないでください。
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-red-500 mt-1">•</span>
+                        水のかかる場所や湿気の多い場所では使用しないでください。
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
