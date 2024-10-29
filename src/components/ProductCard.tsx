@@ -13,7 +13,7 @@ const ProductCard = ({ title, description, image }: ProductCardProps) => {
         <div className="flex items-center justify-between mb-4">
           <p className="text-gray-300 text-lg">{description}</p>
           <button className="bg-primary text-dark px-6 py-2 rounded-full text-base font-bold hover:bg-opacity-90 transition-colors ml-4">
-            購入
+            購入する
           </button>
         </div>
       </div>
