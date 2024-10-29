@@ -114,13 +114,13 @@ const Index = () => {
                 </div>
               </div>
 
-              <div className="mt-12 bg-red-500/10 border border-red-500/20 rounded-lg p-6 backdrop-blur-sm">
+              <div className="mt-12 bg-red-500/5 border border-red-500/10 rounded-lg p-6">
                 <div className="flex items-start gap-3">
-                  <div className="bg-red-500 rounded-full p-2 mt-1">
+                  <div className="bg-red-500/80 rounded-full p-2 mt-1">
                     <AlertCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h4 className="text-red-500 font-bold text-lg mb-3">ご注意</h4>
+                    <h4 className="text-red-400 font-bold text-lg mb-3">使用上の注意</h4>
                     <ul className="space-y-2 text-gray-300">
                       <li className="flex items-start gap-2">
                         <span className="text-red-500 mt-1">•</span>
