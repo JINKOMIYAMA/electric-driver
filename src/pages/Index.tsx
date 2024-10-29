@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import HeroSection from "../components/HeroSection";
 import RiskDiagram from "../components/RiskDiagram";
-import ProductCard from "../components/ProductCard";
 import DriverFeatures from "../components/DriverFeatures";
+import ProductsSection from "../components/ProductsSection";
 import { Shield, Zap, Battery, Factory, AlertCircle } from "lucide-react";
 
 const SpecItem = ({ icon: Icon, title, description }: { 
@@ -148,26 +148,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-dark">
-        <div className="container mx-auto px-4">
-          <div className="fade-in-section">
-            <h2 className="section-title">Products</h2>
-            <h3 className="section-subtitle">製品ラインナップ</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <ProductCard
-                title="見電ドライバー（＋）"
-                description="プラスドライバー型の検電ドライバー"
-                image="/product1.jpg"
-              />
-              <ProductCard
-                title="見電ドライバー（－）"
-                description="マイナスドライバー型の検電ドライバー"
-                image="/product2.jpg"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProductsSection />
 
       <section className="py-20 bg-gradient-to-b from-gray-900 to-dark">
         <div className="container mx-auto px-4">
