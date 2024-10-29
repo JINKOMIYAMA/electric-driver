@@ -27,6 +27,9 @@ export default {
         primary: "#FFD700",
         accent: "#90EE90",
         dark: "#000000",
+        navy: {
+          900: "#1e3a8a",
+        },
       },
       fontFamily: {
         sans: ["Roboto", "Noto Sans JP", "sans-serif"],
