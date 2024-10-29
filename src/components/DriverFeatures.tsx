@@ -35,7 +35,7 @@ const DriverFeatures = () => {
   return (
     <div className="relative max-w-4xl mx-auto mt-16 h-[600px]">
       <div 
-        className="absolute inset-0 z-0 opacity-20"
+        className="absolute inset-0 z-0"
         style={{
           backgroundImage: "url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6')",
           backgroundSize: "cover",
@@ -52,7 +52,7 @@ const DriverFeatures = () => {
         <img
           src="https://images.unsplash.com/photo-1518770660439-4636190af475"
           alt="Electric Driver"
-          className="max-h-full object-contain"
+          className="max-h-[300px] object-contain"
         />
       </motion.div>
 
