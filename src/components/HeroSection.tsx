@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const HeroSection = () => {
+const HeroSection = ({ onLearnMoreClick }: { onLearnMoreClick: () => void }) => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div 
@@ -28,7 +28,10 @@ const HeroSection = () => {
           <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto whitespace-nowrap">
             業界初、検電器と作業用ドライバーが1つになった革新的なツール
           </p>
-          <button className="bg-primary text-dark px-8 py-3 rounded-full text-lg font-bold hover:bg-opacity-90 transition-colors">
+          <button 
+            onClick={onLearnMoreClick}
+            className="bg-primary text-dark px-8 py-3 rounded-full text-lg font-bold hover:bg-opacity-90 transition-colors"
+          >
             詳細を見る
           </button>
         </motion.div>

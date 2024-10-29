@@ -40,11 +40,16 @@ const Index = () => {
     return () => observer.disconnect();
   }, []);
 
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById('about-section');
+    aboutSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="bg-dark min-h-screen">
-      <HeroSection />
+      <HeroSection onLearnMoreClick={scrollToAbout} />
 
-      <section className="py-20 container mx-auto px-4 relative">
+      <section id="about-section" className="py-20 container mx-auto px-4 relative">
         <div className="fade-in-section relative z-10">
           <h2 className="section-title">ABOUT</h2>
           <h3 className="section-subtitle">見電ドライバーとは？</h3>
