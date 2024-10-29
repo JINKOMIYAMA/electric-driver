@@ -12,8 +12,8 @@ const features = [
     id: 2,
     title: "テストボタン",
     description: "テストボタンで使用前点検が可能",
-    position: "top-1/3 -right-36",
-    linePoints: "M0 0 L-60 20",
+    position: "top-1/4 -right-48",
+    linePoints: "M0 0 L-60 10",
   },
   {
     id: 3,
