@@ -148,7 +148,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-900">
+      <section className="py-20 bg-dark">
         <div className="container mx-auto px-4">
           <div className="fade-in-section">
             <h2 className="section-title">Products</h2>
