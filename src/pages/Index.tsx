@@ -76,31 +76,42 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="mt-24">
-            <h2 className="section-title">SAFETY</h2>
-            <h3 className="section-subtitle">電気工事をする方々のお悩みを解決</h3>
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="space-y-6 text-left">
-                <div className="bg-dark/50 p-6 rounded-lg border border-primary/20">
-                  <h4 className="text-lg font-semibold text-primary mb-2 flex items-center gap-2">
-                    <AlertCircle className="w-5 h-5" />
-                    作業時の不安を解消
-                  </h4>
-                  <ul className="space-y-3 text-gray-300">
-                    <li>・さっき検電したから大丈夫？という不安</li>
-                    <li>・目に見えない電気作業の恐怖</li>
-                    <li>・通電状態の確実な確認</li>
-                    <li>・スイッチの切り忘れ防止</li>
-                  </ul>
+          <div className="mt-24 relative">
+            <div className="absolute inset-0 bg-navy-900/30"
+              style={{
+                backgroundImage: `
+                  linear-gradient(to right, rgba(30, 41, 59, 0.1) 1px, transparent 1px),
+                  linear-gradient(to bottom, rgba(30, 41, 59, 0.1) 1px, transparent 1px)
+                `,
+                backgroundSize: '20px 20px'
+              }}
+            />
+            <div className="relative z-10">
+              <h2 className="section-title">SAFETY</h2>
+              <h3 className="section-subtitle">電気工事をする方々のお悩みを解決</h3>
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="space-y-6 text-left">
+                  <div className="bg-dark/50 p-6 rounded-lg border border-primary/20">
+                    <h4 className="text-lg font-semibold text-primary mb-2 flex items-center gap-2">
+                      <AlertCircle className="w-5 h-5" />
+                      作業時の不安を解消
+                    </h4>
+                    <ul className="space-y-3 text-gray-300">
+                      <li>・さっき検電したから大丈夫？という不安</li>
+                      <li>・目に見えない電気作業の恐怖</li>
+                      <li>・通電状態の確実な確認</li>
+                      <li>・スイッチの切り忘れ防止</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-t from-dark to-transparent z-10" />
-                <img
-                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
-                  alt="電気工事作業"
-                  className="rounded-lg object-cover w-full h-[300px]"
-                />
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-t from-dark to-transparent z-10" />
+                  <img
+                    src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+                    alt="電気工事作業"
+                    className="rounded-lg object-cover w-full h-[300px]"
+                  />
+                </div>
               </div>
             </div>
           </div>
