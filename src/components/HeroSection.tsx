@@ -25,7 +25,7 @@ const HeroSection = () => {
           <h2 className="text-3xl md:text-4xl mb-8 text-gray-300">
             Safety Electric Driver
           </h2>
-          <p className="text-xl md:text-2xl mb-12 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto whitespace-nowrap">
             業界初、検電器と作業用ドライバーが1つになった革新的なツール
           </p>
           <button className="bg-primary text-dark px-8 py-3 rounded-full text-lg font-bold hover:bg-opacity-90 transition-colors">
