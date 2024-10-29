@@ -48,7 +48,7 @@ const Index = () => {
   return (
     <div className="bg-dark min-h-screen">
       <HeroSection onLearnMoreClick={scrollToAbout} />
-
+      
       <section id="about-section" className="py-20 container mx-auto px-4 relative">
         <div className="fade-in-section relative z-10">
           <h2 className="section-title">ABOUT</h2>
@@ -164,6 +164,65 @@ const Index = () => {
                 description="マイナスドライバー型の検電ドライバー"
                 image="/product2.jpg"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gradient-to-b from-gray-900 to-dark">
+        <div className="container mx-auto px-4">
+          <div className="fade-in-section">
+            <h2 className="section-title">Company</h2>
+            <h3 className="section-subtitle mb-12">会社概要</h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6">
+                <div className="bg-dark/50 p-8 rounded-xl border border-primary/10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                      <img 
+                        src="/company-logo.svg" 
+                        alt="企業ロゴ" 
+                        className="w-10 h-10"
+                      />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-bold text-primary">株式会社昭栄電気産業</h4>
+                      <p className="text-gray-400">Shoei Electrical Industries Co., Ltd.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-4 text-gray-300">
+                    <div className="flex gap-4">
+                      <span className="text-primary">所在地</span>
+                      <span>〒125-0053 東京都葛飾区鎌倉3-58-2</span>
+                    </div>
+                    <div className="flex gap-4">
+                      <span className="text-primary">製造元</span>
+                      <span>株式会社ベッセル</span>
+                    </div>
+                    <div className="flex gap-4">
+                      <span className="text-primary">お問い合わせ</span>
+                      <span>shoei-info@shoei.com</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="relative h-[400px] rounded-xl overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab"
+                  alt="会社外観"
+                  className="object-cover w-full h-full"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <p className="text-lg text-gray-200">
+                    電気工事の安全性と効率性を追求し、
+                    革新的なツールで業界をリードする企業として。
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
