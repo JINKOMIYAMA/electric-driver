@@ -32,7 +32,7 @@ const Index = () => {
       <section className="py-20 container mx-auto px-4 relative">
         <div className="fade-in-section relative z-10">
           <h2 className="section-title">About</h2>
-          <h3 className="section-subtitle">セーフティシリーズとは？</h3>
+          <h3 className="section-subtitle">見電ドライバーとは？</h3>
           <DriverFeatures />
         </div>
       </section>

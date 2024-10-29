@@ -44,7 +44,7 @@ const DriverFeatures = () => {
         }}
       />
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="section-title text-center mb-16">ドライバーの特徴</h2>
+        <div className="mb-16"></div>
         <div className="relative max-w-4xl mx-auto h-[600px]">
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
