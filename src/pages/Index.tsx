@@ -60,12 +60,12 @@ const Index = () => {
               <SpecItem
                 icon={Battery}
                 title="電源"
-                description="アルカリ乾電池 単4型×2本で長時間使用可能"
+                description="単4電池2本で長時間駆動"
               />
               <SpecItem
                 icon={Shield}
                 title="安全性"
-                description="低圧絶縁手袋着用中でも使用可能な安全設計"
+                description="絶縁手袋着用可能な安全設計"
               />
               <SpecItem
                 icon={Factory}
