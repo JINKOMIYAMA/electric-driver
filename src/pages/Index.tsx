@@ -123,21 +123,16 @@ const Index = () => {
           <div className="fade-in-section">
             <h2 className="section-title">Products</h2>
             <h3 className="section-subtitle">製品ラインナップ</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <ProductCard
-                title="セーフティカッター"
-                description="刃が自動的に戻る安全設計"
+                title="見電ドライバー（＋）"
+                description="プラスドライバー型の検電ドライバー"
                 image="/product1.jpg"
               />
               <ProductCard
-                title="オールメタルセーフティ"
-                description="耐久性に優れた金属製ボディ"
+                title="見電ドライバー（－）"
+                description="マイナスドライバー型の検電ドライバー"
                 image="/product2.jpg"
-              />
-              <ProductCard
-                title="セーフティカッターコンパクト"
-                description="携帯に便利なコンパクトサイズ"
-                image="/product3.jpg"
               />
             </div>
           </div>
