@@ -4,6 +4,7 @@ import RiskDiagram from "../components/RiskDiagram";
 import ProductCard from "../components/ProductCard";
 import DriverFeatures from "../components/DriverFeatures";
 import { Shield, Zap, Battery, Factory, AlertCircle } from "lucide-react";
+import ShoeiLogo from "../assets/images/shoeilogo.jpg";
 
 const SpecItem = ({ icon: Icon, title, description }: { 
   icon: React.ElementType, 
@@ -175,35 +176,35 @@ const Index = () => {
             <h2 className="section-title">Company</h2>
             <h3 className="section-subtitle mb-12">会社概要</h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
               <div className="space-y-6">
                 <div className="bg-dark/50 p-8 rounded-xl border border-primary/10">
-                  <div className="flex items-center gap-4 mb-6">
-                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                  <div className="flex items-center gap-4 mb-8">
+                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
                       <img 
-                        src="/company-logo.svg" 
-                        alt="企業ロゴ" 
-                        className="w-10 h-10"
+                        src={ShoeiLogo}
+                        alt="昭栄電気産業ロゴ"
+                        className="w-13 h-14 object-contain"
                       />
                     </div>
                     <div>
-                      <h4 className="text-xl font-bold text-primary">株式会社昭栄電気産業</h4>
-                      <p className="text-gray-400">Shoei Electrical Industries Co., Ltd.</p>
+                      <h4 className="text-2xl font-bold text-primary">株式会社昭栄電気産業</h4>
+                      <p className="text-lg text-gray-400">Shoei Electrical Industries Co., Ltd.</p>
                     </div>
                   </div>
                   
-                  <div className="space-y-4 text-gray-300">
+                  <div className="space-y-6 text-gray-300">
                     <div className="flex gap-4">
-                      <span className="text-primary">所在地</span>
-                      <span>〒125-0053 東京都葛飾区鎌倉3-58-2</span>
+                      <span className="text-lg font-medium text-primary">所在地</span>
+                      <span className="text-lg">〒125-0053 東京都葛飾区鎌倉3-58-2</span>
                     </div>
                     <div className="flex gap-4">
-                      <span className="text-primary">製造元</span>
-                      <span>株式会社ベッセル</span>
+                      <span className="text-lg font-medium text-primary">製造元</span>
+                      <span className="text-lg">株式会社ベッセル</span>
                     </div>
                     <div className="flex gap-4">
-                      <span className="text-primary">お問い合わせ</span>
-                      <span>shoei-info@shoei.com</span>
+                      <span className="text-lg font-medium text-primary">お問い合わせ</span>
+                      <span className="text-lg">shoei-buppan@shoeinet.com</span>
                     </div>
                   </div>
                 </div>

@@ -1,16 +1,18 @@
 import { motion } from "framer-motion";
+// 画像をインポート
+import HeroImage from '../assets/images/HeroSection.jpg';
 
 const HeroSection = ({ onLearnMoreClick }: { onLearnMoreClick: () => void }) => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div 
-        className="absolute inset-0 z-0 opacity-20"
-        style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1518770660439-4636190af475')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          filter: "brightness(0.7)"
-        }}
+      className="absolute inset-0 z-0 opacity-20"
+      style={{
+        backgroundImage: `url(${HeroImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        filter: "brightness(0.7)"
+      }}
       />
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
