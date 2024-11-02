@@ -7,28 +7,28 @@ const features = [
     id: 1,
     title: "先端保護",
     description: "先端6mmまで金属部分をチューブで保護",
-    position: "top-10 left-0",
+    position: "top-[140px] left-[-10px]",
     linePoints: "M0 0 L100 100",
   },
   {
     id: 2,
     title: "テストボタン",
     description: "テストボタンで使用前点検が可能",
-    position: "top-0 right-10",
+    position: "top-[125px] right-[180px]",
     linePoints: "M0 0 L-100 100",
   },
   {
     id: 3,
     title: "LEDインジケーター",
     description: "作業箇所の通電・無電が見える高精度LED",
-    position: "bottom-10 left-8",
+    position: "bottom-[130px] left-[100px]",
     linePoints: "M300 -300 L0 0",
   },
   {
     id: 4,
     title: "滑り止めグリップ",
     description: "ゴム製の持ちやすい滑り止め",
-    position: "bottom-0 right-8",
+    position: "bottom-[100px] right-[20px]",
     linePoints: "M0 0 L-160 -160",
   },
 ];
@@ -47,7 +47,7 @@ const DriverFeatures = () => {
       />
       <div className="container mx-auto px-4 relative z-10">
         <div className="mb-8"></div>
-        <div className="relative max-w-4xl mx-auto h-[400px]">
+        <div className="relative w-[800px] h-[600px] mx-auto">
           {/* 特徴説明（先に配置） */}
           {features.map((feature, index) => (
             <motion.div
@@ -58,23 +58,54 @@ const DriverFeatures = () => {
               className={`absolute ${feature.position} max-w-xs z-30`}
             >
               <div className="relative">
-                <svg
-                  className="absolute text-primary z-25"
-                  width="300"
-                  height="200"
-                  viewBox="-50 -50 200 200"
+                {/* 上部の特徴（id: 1, 2）用のSVG */}
+                {feature.id <= 2 && (
+                  <svg
+                    className="absolute inset-0 text-primary"
+                    width="100%"
+                    height="200"  // 下向きの線のために高さを確保
+                    style={{
+                      top: '100%',  // ボックスの下に配置
+                      pointerEvents: 'none'
+                    }}
+                  >
+                    {feature.id === 1 && (
+                      <line x1="50%" y1="0" x2="60%" y2="30%" stroke="currentColor" strokeWidth="2" />
+                    )}
+                    {feature.id === 2 && (
+                      <line x1="50%" y1="0" x2="20%" y2="30%" stroke="currentColor" strokeWidth="2" />
+                    )}
+                  </svg>
+                )}
+
+                {/* 下部の特徴（id: 3, 4）用のSVG */}
+                {feature.id > 2 && (
+                  <svg
+                    className="absolute inset-0 text-primary"
+                    width="100%"
+                    height="200"
+                    style={{
+                      transform: 'translateY(-100%)',
+                      pointerEvents: 'none'
+                    }}
+                  >
+                    {feature.id === 3 && (
+                      <line x1="50%" y1="100%" x2="70%" y2="70%" stroke="currentColor" strokeWidth="2" />
+                    )}
+                    {feature.id === 4 && (
+                      <line x1="50%" y1="100%" x2="30%" y2="75%" stroke="currentColor" strokeWidth="2" />
+                    )}
+                  </svg>
+                )}
+                
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  className="bg-dark/80 backdrop-blur-sm p-4 rounded-lg border border-primary/20"
                 >
-                  <path
-                    d={feature.linePoints}
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    fill="none"
-                  />
-                </svg>
-                <div className="bg-dark/80 backdrop-blur-sm p-4 rounded-lg border border-primary/20 relative z-30">
                   <h4 className="text-primary font-bold mb-2">{feature.title}</h4>
                   <p className="text-sm text-gray-300">{feature.description}</p>
-                </div>
+                </motion.div>
               </div>
             </motion.div>
           ))}
@@ -83,14 +114,13 @@ const DriverFeatures = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
             className="absolute inset-0 flex items-center justify-center z-20"
           >
             <img
               src={PlusDriver}
               alt="プラスドライバー"
-              className="max-h-[500px] object-contain rotate-[-135deg] cursor-pointer"
+              className="h-[500px] w-auto object-contain rotate-[-135deg]"
             />
           </motion.div>
         </div>

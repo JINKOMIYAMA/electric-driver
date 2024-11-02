@@ -5,6 +5,9 @@ import ProductCard from "../components/ProductCard";
 import DriverFeatures from "../components/DriverFeatures";
 import { Shield, Zap, Battery, Factory, AlertCircle } from "lucide-react";
 import ShoeiLogo from "../assets/images/shoeilogo.jpg";
+import PlusDriver from "../assets/images/plus driver.jpg";
+import MinusDriver from "../assets/images/minus driver.jpg";
+import WorkImage from "../assets/images/work.jpg";
 
 const SpecItem = ({ icon: Icon, title, description }: { 
   icon: React.ElementType, 
@@ -113,7 +116,7 @@ const Index = () => {
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-t from-dark to-transparent z-10" />
                   <img
-                    src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+                    src={WorkImage}
                     alt="電気工事作業"
                     className="rounded-lg object-cover w-full h-[300px]"
                   />
@@ -158,12 +161,14 @@ const Index = () => {
               <ProductCard
                 title="見電ドライバー（＋）"
                 description="プラスドライバー型の検電ドライバー"
-                image="/product1.jpg"
+                image={PlusDriver}
+                className="aspect-[4/3] object-contain"
               />
               <ProductCard
                 title="見電ドライバー（－）"
                 description="マイナスドライバー型の検電ドライバー"
-                image="/product2.jpg"
+                image={MinusDriver}
+                className="aspect-[4/3] object-contain"
               />
             </div>
           </div>
