@@ -21,14 +21,15 @@ const HeroSection = ({ onLearnMoreClick }: { onLearnMoreClick: () => void }) => 
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <h1 className="text-6xl md:text-7xl font-bold mb-6">
-            <span className="text-primary">見電</span> ドライバー
+          <h1 className="text-4xl md:text-7xl font-bold mb-6">
+            <span className="text-primary text-[1.1em] md:text-[1em]">見電</span> ドライバー
           </h1>
           <h2 className="text-3xl md:text-4xl mb-8 text-gray-300">
             Safety Electric Driver
           </h2>
-          <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto whitespace-nowrap">
-            業界初、検電器と作業用ドライバーが1つになった革新的なツール
+          <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto">
+            業界初、検電器と作業用ドライバーが<br />
+            1つになった革新的なツール
           </p>
           <div className="flex flex-col gap-4 justify-center items-center">
             <button 
